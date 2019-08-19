@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+html {
+  height: calc(100vh - 3%);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}

@@ -1,0 +1,4 @@
+<form *ngFor="let filter of filters">
+    <input type="checkbox" [checked]="filter.checked" [value]="filter.name"
+        (change)="filterChanged($event)">{{ filter.name }}
+</form>
