@@ -1,7 +1,85 @@
 .wrapper {
-    height: calc(90% - 4rem);
+    height: calc(93% - 8rem);
     width: calc(100% - 4rem);
     display: flex;
     flex-flow: column wrap;
     margin: 2rem 2rem 2rem 2rem;
-  }
+}
+
+app-filter {
+    width: 100%;
+    height: 4%;
+}
+
+app-linear-chart {
+    height: calc(48% - 1rem);
+    width: calc(50% - 1rem);
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+app-pie-chart {
+    height: 48%;
+    width: calc(50% - 1rem);
+    margin: 0.5rem 0.5rem 0 0;
+}
+
+app-bar-chart {
+    height: 96%;
+    width: 50%;
+    margin: 0 0 0 0.5rem;
+}
+
+.leg {
+    height: 3%;
+    width: 100%;
+    margin: 0 0 0 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.highcharts-tooltip > span {
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #edfbfe;
+    box-shadow: 0px 4px 6px rgba(10, 82, 154, 0.2);
+    padding: 8px;
+}
+
+.highcharts-label,
+span,
+b {
+    font-weight: normal !important;
+    color: #666666 !important;
+}
+
+.title {
+    margin-bottom: 0.5rem;
+}
+
+.barLabels span {
+    color: white !important;
+    font-size: 0.75rem !important;
+    left: -0.75rem !important;
+}
+
+.greenBlock {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.redBlock {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+.blueBlock {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}

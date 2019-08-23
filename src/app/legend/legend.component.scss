@@ -1,0 +1,22 @@
+.symbol {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    float: left;
+    border-radius: 10px;
+}
+.item {
+    height: 40px;
+    clear: both;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.serieName {
+    float: left;
+    cursor: pointer;
+}
+
+.legend-title {
+    margin-bottom: 0.5rem;
+}

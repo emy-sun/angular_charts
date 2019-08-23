@@ -7,7 +7,8 @@ import { ChartModel } from '../chart.model';
 
 @Component({
     selector: 'app-linear-chart',
-    templateUrl: './linear-chart.component.html'
+    templateUrl: './linear-chart.component.html',
+    styleUrls: [ './linear-chart.component.scss' ]
 })
 export class LinearChartComponent implements OnInit {
     public chart: Chart;

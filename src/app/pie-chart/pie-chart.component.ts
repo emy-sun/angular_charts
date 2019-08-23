@@ -7,7 +7,8 @@ import { ChartModel } from '../chart.model';
 
 @Component({
     selector: 'app-pie-chart',
-    templateUrl: './pie-chart.component.html'
+    templateUrl: './pie-chart.component.html',
+    styleUrls: [ './pie-chart.component.scss' ]
 })
 export class PieChartComponent {
     chart: Chart;

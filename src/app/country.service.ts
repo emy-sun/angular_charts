@@ -10,7 +10,7 @@ export class CountryService {
     dataWithColors;
     newObj;
 
-    private dataOil: ChartModel[] = dataFromDB;
+    public dataOil: ChartModel[] = dataFromDB;
     public dataChanged = new Subject<any>();
     public optionsSeries: any;
 
@@ -23,14 +23,13 @@ export class CountryService {
         return this.optionsSeries;
     }
 
-    // sumOilBar = dataFromDB.map((item) => {
-    //     this.newObj = {};
-    //     this.newObj.name = item.name;
-    //     this.newObj.data = [ item.data.reduce((acc, value) => acc + value) ];
-    //     return this.newObj;
-    // });
-
-    // private bar = this.sumOilBar;
+    withColors(dataOil, COLOR) {
+        return dataOil.map((item, index) => {
+            const newObj = { name: item.name, color: COLOR[index] };
+            console.log(newObj);
+            return newObj;
+        });
+    }
 
     extendDataWithColors = (data, colors) => {
         this.dataWithColors = data.map((item, index) => {

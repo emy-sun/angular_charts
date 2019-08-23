@@ -1,0 +1,5 @@
+<div class='legend-title'>Oil production in the leading countries for 2013-2017</div>
+<div class="item" *ngFor='let item of withColors'>
+    <div class="symbol" [ngStyle]="{'background-color': item.color}"></div>
+    <div class="serieName">{{item.name}}</div>
+</div>
